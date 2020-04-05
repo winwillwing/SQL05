@@ -1,0 +1,81 @@
+﻿﻿信息系统与数据库技术练习5答题卡
+
+班级：     信管一班
+姓名：     冯颖豪
+学号：     20190307141
+
+注：请将答案放置在序号下方。*/
+
+（二）
+1.CREATE DATABASE BookShop
+ON 
+(
+NAME=Shop2,
+FLENAME='D:\练习5\.Shop1MDF',
+SIZE=5,
+MAXSIZE=50,
+FILEGROWTH=2
+)
+LOG ON
+(
+NAME=shoplong2,
+FILENAME='D:\练习5\shoplong1.LDF',
+SIZE=5,
+MAXSIZE=50,
+FILEGROWTH=2
+)
+
+
+
+2.CREATE DATABASE Travel
+ON 
+(
+NAME=Travel2,
+FILENAME='D:\练习5\Travel.MDF',
+SIZE=6,
+MAXSIZE=UNLIMITED,
+FILEGROWTH=10%
+)
+LOG ON
+(
+NAME=Trave2,
+FILENAME='D:\练习5\Trave1.LDF',
+SIZE=6,
+MAXSIZE=UNLIMITED,
+FILEGROWTH=10%
+)
+
+
+
+
+3.CREATE DATABASE Warehhouse
+ON
+(
+NAME=Warehhouse2,
+FILENAME='D:\练习5\Warehhouse se1.MDF',
+SIZE=8,
+MAXSIZE=80,
+FILEGROWTH=15
+),
+FILEGROUP Warehhouse4
+(
+NAME=Warehhouse3,
+FILENAME='D:\练习5\Warehhouse selog2.NDF',
+SIZE=8,
+MAXSIZE=80,
+FILEGROWTH=15
+)
+LOG ON
+(
+NAME=Warehhouse selog1,
+FILENAME='D:\练习5\Warehhouse selog1.LDF',
+SIZE=8,
+MAXSIZE=80,
+FILEGROWTH=15
+)
+
+
+
+
+
+（三
